@@ -59,6 +59,7 @@ function sendEmails() {
     var emailAddress = row[0];
     var subject = "PNR: "+ sheet.getRange("B1").getValue()+" | Class: "+sheet.getRange("B5").getValue()+" | Current Status: "+sheet.getRange("B9").getValue();
     var message = "Booking Status:" + sheet.getRange("B7").getValue() + " | \
+Previous Status:" + sheet.getRange("B8").getValue()+ " | \
 Current Status:" + sheet.getRange("B9").getValue()+ " | \
 Train Name:" + sheet.getRange("B4").getValue()+ " | \
 From:" + sheet.getRange("B2").getValue()+ " | \
